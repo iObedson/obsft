@@ -1,5 +1,5 @@
 # JAMStack personal blog - starter files
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/iObedson/iosoft&stack=cms)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/iObedson/obsft&stack=cms)
 These are the starting files used by [iObedson] to create a personal blog site for the [Codementor] DevProjects Challenge, [Create a fast and secure blog using JAMStack]. You are free to use them however you want to get started with the challenge, if you'd like to start working on creating the site without worrying about the content itself.
 
 The provided files are finished pages using regular HTML and CSS. The HTML files can be broken down into peices, and used to build out the different templates and partial files using a templating language of your choice.
