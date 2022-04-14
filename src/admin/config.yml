@@ -10,20 +10,21 @@ collections:
       create: true 
       slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
       fields: 
-        - { label: "Title", name: "title", widget: "string" }
-        - { label: "Description", name: "description", widget: "string" }
-        - { label: "Author", name: "author", widget: "string" }
+        - { label: "Title", name: "title", widget: "strig" }
+        - { label: "Description", name: "description", widget: "strig" }
+        - { label: "Author", name: "author", widget: "strig" }
         - { label: "Date", name: "date", widget: "datetime" }
         - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
         - { label: "Featured Image", name: "image", widget: "image" }
         - { label: "Image caption", name: "imageAlt", widget: "string" }
         - { label: "Body", name: "body", widget: "markdown" }
-    - name: "pages"
-      label: "Pages"
+    - name: "more"
+      label: "More"
+      folder: "src/inner-pages/more_page"
       files:
-      - file: "_inner-pages/inner-pages"
+      - file: "inner-pages/more_page"
         label: "Nav Pages"
-        name: "inner-pages"
+        name: "more"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Blurb", name: "blurb", widget: "text" }
@@ -34,10 +35,11 @@ collections:
               fields:
                 [
                   { label: "Heading", name: "heading", widget: string },
+                  { label: "Tags", name: "tags", widget: "list", default: ["more"] }
                   { label: "Text", name: "text", widget: "text" },
                 ],
             }
-      - file: "_inner-pages/about/"
+      - file: "inner-pages/about"
         label: "About"
         name: "about"
         fields:
