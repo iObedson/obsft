@@ -38,6 +38,10 @@ collections:
     - name:   "about"
       label:  "About"
       folder: "src/inner-pages/about"
+      files:
+      - file: "inner-pages/more_page"
+        label: "Nav Pages"
+        name: "more"
       fields:
          - { label: "Title", name: "title", widget: "string" }
          - { label: "Body", name: "body", widget: "text" }
