@@ -35,9 +35,9 @@ collections:
                  { label: "Text", name: "text", widget: "text" },
                 ],
             }
-      - file: "inner-pages/about"
-        label: "About"
-        name: "about"
-        fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Body", name: "body", widget: "text" }
+    - name: "about"
+      label: "About"
+      folder: "src/inner-pages/about"
+      fields:
+         - { label: "Title", name: "title", widget: "string" }
+         - { label: "Body", name: "body", widget: "text" }
