@@ -18,15 +18,15 @@ collections:
         - { label: "Featured Image", name: "image", widget: "image" }
         - { label: "Image caption", name: "imageAlt", widget: "string" }
         - { label: "Body", name: "body", widget: "markdown" }
-    - name: "more"
-      label: "More"
+    - name:   "more"
+      label:  "More"
       folder: "src/inner-pages/more_page"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Blurb", name: "blurb", widget: "text" }
           - {
-              label: "Section",
-              name: "section",
+              label:  "Section",
+              name:   "section",
               widget: "object",
               fields:
                 [
@@ -35,8 +35,8 @@ collections:
                  { label: "Text", name: "text", widget: "text" },
                 ],
             }
-    - name: "about"
-      label: "About"
+    - name:   "about"
+      label:  "About"
       folder: "src/inner-pages/about"
       fields:
          - { label: "Title", name: "title", widget: "string" }
