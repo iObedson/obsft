@@ -34,9 +34,9 @@ collections:
               widget: "object",
               fields:
                 [
-                  { label: "Heading", name: "heading", widget: string }
-                  { label: "Tags", name: "tags", widget: "list", default: ["more"] }
-                  { label: "Text", name: "text", widget: "text" }
+                 - { label: "Heading", name: "heading", widget: string }
+                 - { label: "Tags", name: "tags", widget: "list", default: ["more"] }
+                 - { label: "Text", name: "text", widget: "text" }
                 ],
             }
       - file: "inner-pages/about"
