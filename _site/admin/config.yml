@@ -1,11 +1,13 @@
+
+local_backend: true
 backend:
   name: git-gateway
-  branch: main
-media_folder: "_site/assets/blog"
-public_folder: "assts/blog"
+  branch: master 
+media_folder: "src/assets/blog"
+public_folder: "assets/blog"
 collections: 
     - name: "blog"
-      label: "Blog"
+      label: " Blog"
       folder: "src/blog"
       create: true 
       slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
@@ -18,30 +20,28 @@ collections:
         - { label: "Featured Image", name: "image", widget: "image" }
         - { label: "Image caption", name: "imageAlt", widget: "string" }
         - { label: "Body", name: "body", widget: "markdown" }
-    - name:   "more"
-      label:  "More"
+    - name: "more"
+      label: "More"
       folder: "src/inner-pages/more_page"
-      field:
-      - files: "src/inner-pages/more_page"
-        name: "more"
-        label: "Nav Pages"
+      create: true 
       fields:
-        - { label: "Title", name: "title", widget: "string" }
-        - { label: "Blurb", name: "blurb", widget: "text" }
-        - {
-            label:  "Section",
-            name:   "section",
-            widget: "object",
-            fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Blurb", name: "blurb", widget: "text" }
+          - {
+              label: "Section",
+              name: "section",
+              widget: "object",
+              fields:
                 [
-                 { label: "Heading", name: "heading", widget: string },
-                 { label: "Tags", name: "tags", widget: "list", default: ["more"] },
-                 { label: "Text", name: "text", widget: "text" },
+                  { label: "Heading", name: "heading", widget: string },
+                  { label: "Tags", name: "tags", widget: "list", default: ["more"] },
+                  { label: "Text", name: "text", widget: "text" },
                 ],
             }
-    - name:   "about"
-      label:  "About"
-      folder: "src/inner-pages/about"
-      fields:
-         - { label: "Title", name: "title", widget: "string" }
-         - { label: "Body", name: "body", widget: "text" }
+    - name: "about"
+      label: " About"
+      folder: "inner-pages/about_page"
+      create: true 
+      fields: 
+        - { label: "Title", name: "title", widget: "string" }
+        - { label: "Body", name: "body", widget: "markdown" }
